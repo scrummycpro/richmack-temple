@@ -1,0 +1,27 @@
+<div class="show-page-container">
+  <div class="show-page-header">
+    <h1><%= @post.title %></h1>
+
+    <% if @post.picture.attached? %>
+      <div style="text-align: center;">
+        <%= image_tag @post.picture %>
+      </div>
+    <% end %>
+
+    <h2>Instructions</h2>
+    <p><%= @post.instructions %></p>
+
+    <% if @post.video.attached? %>
+      <div class="embed-responsive embed-responsive-16by9">
+        <%= video_tag url_for(@post.video), controls: true, class: "embed-responsive-item" %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="show-page-body">
+    <hr> <!-- Divider -->
+
+    <h2>Jewels</h2>
+    <p><%= @post.body %></p>
+  </div>
+</div>

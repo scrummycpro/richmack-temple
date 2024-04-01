@@ -1,0 +1,131 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/* app/assets/stylesheets/application_dark_mode.css */
+
+/* Set dark background color */
+body {
+    background-color: #333;
+    color: #fff; /* Set light text color */
+  }
+  
+  /* Example styling for specific elements */
+  /* Navbar */
+.navbar {
+    background: linear-gradient(to right, #000000, #ffd700); /* Black and gold gradient */
+    margin-top: 20px; /* Add additional padding between header and navbar */
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Glow effect */
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 10px 15px; /* Add padding */
+  }
+  
+  
+  .card {
+    background-color: #444; /* Darken card background */
+    color: #fff; /* Light text color */
+  }
+  
+  /* Add more styles for other elements as needed */
+  /* Form */
+.form-control {
+    background: linear-gradient(to right, #000000, #ffd700); /* Black and gold gradient */
+    color: #fff; /* Light text color */
+  }
+  
+  .btn-primary {
+    background-color: #ffd700; /* Gold color for button */
+    border-color: #ffd700; /* Gold color for border */
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:active {
+    background-color: #ffd700; /* Darken button on hover/active */
+    border-color: #ffd700; /* Darken border on hover/active */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Glow effect */
+  }
+  
+  /* Show Page */
+ /* Show Page */
+.show-page-container {
+    padding: 20px; /* Add padding */
+  }
+  
+  .show-page-header {
+    background-color: #333; /* Dark background color */
+    padding: 20px; /* Add padding */
+    margin-bottom: 20px; /* Add margin */
+    color: #fff; /* Light text color */
+  }
+  
+  .show-page-header h1 {
+    font-size: 2.5rem; /* Increase font size */
+  }
+  
+  .show-page-header h2 {
+    font-size: 2rem; /* Increase font size */
+  }
+  
+  .show-page-header p {
+    font-size: 1.5rem; /* Increase font size */
+    margin-bottom: 1rem; /* Add margin bottom */
+  }
+  
+  .show-page-picture {
+    margin-bottom: 20px; /* Add more margin bottom */
+  }
+  
+  .show-page-body hr {
+    border-top: 1px solid #000; /* Black border for divider */
+    margin: 20px 0; /* Add spacing above and below divider */
+  }
+  
+  .show-page-body h2 {
+    font-size: 2rem; /* Increase font size */
+  }
+  
+  .show-page-body p {
+    font-size: 1.5rem; /* Increase font size */
+    margin-bottom: 1rem; /* Add margin bottom */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .show-page-header h1 {
+      font-size: 2rem; /* Decrease font size for smaller screens */
+    }
+  
+    .show-page-header h2 {
+      font-size: 1.5rem; /* Decrease font size for smaller screens */
+    }
+  
+    .show-page-header p {
+      font-size: 1.25rem; /* Decrease font size for smaller screens */
+    }
+  
+    .show-page-body h2 {
+      font-size: 1.5rem; /* Decrease font size for smaller screens */
+    }
+  
+    .show-page-body p {
+      font-size: 1.25rem; /* Decrease font size for smaller screens */
+    }
+  }
+  
